@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6096BCA021B0879100308AC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096BC9F21B0879100308AC9 /* AppDelegate.swift */; };
-		6096BCA221B0879100308AC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096BCA121B0879100308AC9 /* ViewController.swift */; };
 		6096BCA521B0879100308AC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6096BCA321B0879100308AC9 /* Main.storyboard */; };
 		6096BCA721B0879200308AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6096BCA621B0879200308AC9 /* Assets.xcassets */; };
 		6096BCAA21B0879200308AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6096BCA821B0879200308AC9 /* LaunchScreen.storyboard */; };
 		6096BCB521B0879200308AC9 /* InventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096BCB421B0879200308AC9 /* InventoryTests.swift */; };
 		6096BCC021B0879300308AC9 /* InventoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096BCBF21B0879300308AC9 /* InventoryUITests.swift */; };
+		6096BCCE21B0895100308AC9 /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096BCCD21B0895100308AC9 /* InventoryTableViewController.swift */; };
+		6096BCD121B0899600308AC9 /* inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 6096BCD021B0899600308AC9 /* inventory.json */; };
+		6096BCD321B089C200308AC9 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096BCD221B089C200308AC9 /* Inventory.swift */; };
+		6096BCD521B08A3700308AC9 /* InventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6096BCD421B08A3700308AC9 /* InventoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6096BC9C21B0879100308AC9 /* Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6096BC9F21B0879100308AC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6096BCA121B0879100308AC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6096BCA421B0879100308AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6096BCA621B0879200308AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6096BCA921B0879200308AC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		6096BCBB21B0879300308AC9 /* InventoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6096BCBF21B0879300308AC9 /* InventoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryUITests.swift; sourceTree = "<group>"; };
 		6096BCC121B0879300308AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6096BCCD21B0895100308AC9 /* InventoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
+		6096BCD021B0899600308AC9 /* inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = inventory.json; sourceTree = "<group>"; };
+		6096BCD221B089C200308AC9 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		6096BCD421B08A3700308AC9 /* InventoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,11 @@
 		6096BC9E21B0879100308AC9 /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
+				6096BCCF21B0895A00308AC9 /* model */,
 				6096BC9F21B0879100308AC9 /* AppDelegate.swift */,
-				6096BCA121B0879100308AC9 /* ViewController.swift */,
+				6096BCCD21B0895100308AC9 /* InventoryTableViewController.swift */,
 				6096BCA321B0879100308AC9 /* Main.storyboard */,
+				6096BCD421B08A3700308AC9 /* InventoryTableViewCell.swift */,
 				6096BCA621B0879200308AC9 /* Assets.xcassets */,
 				6096BCA821B0879200308AC9 /* LaunchScreen.storyboard */,
 				6096BCAB21B0879200308AC9 /* Info.plist */,
@@ -123,6 +131,15 @@
 				6096BCC121B0879300308AC9 /* Info.plist */,
 			);
 			path = InventoryUITests;
+			sourceTree = "<group>";
+		};
+		6096BCCF21B0895A00308AC9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6096BCD021B0899600308AC9 /* inventory.json */,
+				6096BCD221B089C200308AC9 /* Inventory.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6096BCD121B0899600308AC9 /* inventory.json in Resources */,
 				6096BCAA21B0879200308AC9 /* LaunchScreen.storyboard in Resources */,
 				6096BCA721B0879200308AC9 /* Assets.xcassets in Resources */,
 				6096BCA521B0879100308AC9 /* Main.storyboard in Resources */,
@@ -256,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6096BCA221B0879100308AC9 /* ViewController.swift in Sources */,
+				6096BCD521B08A3700308AC9 /* InventoryTableViewCell.swift in Sources */,
+				6096BCD321B089C200308AC9 /* Inventory.swift in Sources */,
+				6096BCCE21B0895100308AC9 /* InventoryTableViewController.swift in Sources */,
 				6096BCA021B0879100308AC9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
